@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Agile Brazil</title>
+  <style type="text/css">
+  body{
+    text-align: center;
+    font-family: sans-serif;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr { line-height: 18  px; }
+.placa{page-break-after: always}
+.title{font-size: 3em;}
+.author{font-size: 3em;}
+.limit{font-size: 2em;}
+.hashtags{font-size: 2em;}
+.session_info{font-size: 2em;}
+.venue{font-size: 2em;}
+
+  </style>
+  
+</head>
+
+<body>
+
+  {{#each data}}
+    {{> placa this}}
+  {{/each}}
+  
+</body>
+</html>

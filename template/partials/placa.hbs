@@ -1,0 +1,16 @@
+<div class="placa">
+    {{#this}}
+        <h1 class="title">{{name}}</h1>
+        {{#if speakers}}
+            <p class="author">{{authors speakers}}</p>
+        {{/if}}
+        {{#ifCond seats '>' 0}}
+            <p class="limit">Limite: {{seats}} participantes</p>
+        {{/ifCond}}
+        {{#if tags}}
+            <p class="hashtags">{{hashtags tags}}</p>
+        {{/if}}
+        <p class="session_info">{{date_info event_start}}</p> <!--Xª feira - dd/mm - hh:mm-->
+        <p class="venue">{{venue}}</p>
+    {{/this}}
+  </div>
