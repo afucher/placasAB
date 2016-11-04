@@ -7,7 +7,7 @@ var partialsDir = __dirname + '/template/partials';
 /** Retorna as informações do sched e gera as placas em html */
 schedAPI.getSessionExport((err,session) => {
   session = session.filter((session)=>{
-    return session.venue !== "Foyer";
+    return session.venue !== "Foyer" && session.active == "Y";
   })
   let data = {"data": session};
   generate(data);
